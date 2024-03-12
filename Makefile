@@ -1,8 +1,8 @@
 CC = x86_64-w64-mingw32-g++
 CLFAGS = -Wall -Wextra
-LIB = -Ldeps/glfw3/lib
+LIB = -Ldeps/glfw3/lib -Ldeps/glut/lib/x64
 LIBS = -lglfw3 -lopengl32 -lgdi32 -static
-INCLUDE = -Ideps/ -Ideps/glfw3/include 
+INCLUDE = -Ideps/ -Ideps/glfw3/include
 
 BUILD_DIR = build
 TARGET = $(BUILD_DIR)/game.exe
